@@ -1,0 +1,14 @@
+.hero {
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 51px;
+        margin-bottom: 26px;
+    }
+
+    &__subtitle {
+        margin-bottom: 26px;
+        color: $grey;
+        line-height: 26px;
+    }
+}
