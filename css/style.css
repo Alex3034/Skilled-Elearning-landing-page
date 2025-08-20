@@ -44,6 +44,52 @@
   color: #83869a;
   line-height: 26px;
 }
+.hero__buttons {
+  margin-bottom: 40px;
+}
+.hero__img {
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  position: relative;
+}
+.hero__number {
+  display: inline-block;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: white;
+  color: #13183f;
+  padding: 5px;
+  gap: 10px;
+  text-align: left;
+  position: absolute;
+  border-radius: 1rem;
+  box-shadow: 0 5px 10px #83869a;
+}
+.hero__number span {
+  display: block;
+}
+.hero__number-title {
+  font-size: 14px;
+  color: #83869a;
+}
+.hero__number-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #13183f;
+}
+.hero__number-1 {
+  padding: 16px 20px 16px 20px;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.hero__number-2 {
+  padding: 16px 45px 16px 20px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
 
 header.header {
   padding-top: 16px;
