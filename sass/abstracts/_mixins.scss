@@ -48,3 +48,10 @@
     @include button();
     background-image: $gradient-pink-orange;
 }
+
+@mixin button-link() {
+  color: $pink;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
