@@ -12,6 +12,9 @@
   text-decoration: none;
   border-radius: 28px;
 }
+.button:hover {
+  background-color: #666ca3;
+}
 
 .button--pink-blue {
   display: inline-block;
@@ -21,6 +24,12 @@
   text-decoration: none;
   border-radius: 28px;
   background-image: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+}
+.button--pink-blue:hover {
+  background-color: #666ca3;
+}
+.button--pink-blue:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%) !important;
 }
 
 .button--pink-orange {
@@ -32,6 +41,12 @@
   border-radius: 28px;
   background-image: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
 }
+.button--pink-orange:hover {
+  background-color: #666ca3;
+}
+.button--pink-orange:hover {
+  background: var(--Gradient-1-Hover, linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%));
+}
 
 .button-link {
   color: #f74780;
@@ -42,6 +57,11 @@
 
 .hero {
   margin-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .hero {
+    margin-bottom: 80px;
+  }
 }
 .hero__title {
   font-size: 40px;
@@ -62,6 +82,22 @@
   width: 80%;
   margin-left: 10%;
   position: relative;
+}
+@media (min-width: 768px) {
+  .hero__img {
+    width: 50%;
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__img {
+    height: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__img {
+    width: 400px;
+  }
 }
 .hero__number {
   display: inline-block;
@@ -94,16 +130,86 @@
   right: 0;
   position: absolute;
 }
+@media (min-width: 768px) {
+  .hero__number-1 {
+    top: -33px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__number-1 {
+    top: 64px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__number-1 {
+    right: 55px;
+  }
+}
 .hero__number-2 {
   padding: 16px 45px 16px 20px;
   bottom: 0;
   left: 0;
   position: absolute;
 }
+@media (min-width: 768px) {
+  .hero__number-2 {
+    bottom: -34px;
+    left: 34px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__number-2 {
+    bottom: 154px;
+    left: -53px;
+  }
+}
+@media (min-width: 768px) {
+  .hero__img-mobile {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero .container {
+    padding-bottom: 100px;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .container {
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .hero__content {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__content {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__content {
+    max-width: 440px;
+  }
+}
 
 .activities {
   padding-bottom: 40px;
   background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+}
+@media (min-width: 768px) {
+  .activities {
+    padding-bottom: 80px;
+  }
 }
 .activities__header {
   background-image: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
@@ -112,6 +218,11 @@
   border-radius: 10px;
   margin-bottom: 60px;
 }
+@media (min-width: 768px) {
+  .activities__header {
+    margin-bottom: 0;
+  }
+}
 .activities__item {
   padding: 1rem 2rem;
   margin-bottom: 40px;
@@ -119,6 +230,11 @@
   border-radius: 10px;
   padding: 56px 28px 40px;
   position: relative;
+}
+@media (min-width: 768px) {
+  .activities__item {
+    margin-bottom: 0;
+  }
 }
 .activities__item:last-child {
   margin-bottom: 0;
@@ -146,6 +262,19 @@
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 28px;
+}
+@media (min-width: 768px) {
+  .activities .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .activities .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px 30px;
+  }
 }
 
 footer.main-footer {
@@ -186,6 +315,36 @@ header.header ul {
 .container {
   padding-left: 16px;
   padding-right: 16px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("../img/hero-img.png");
+    background-repeat: no-repeat;
+    background-position: 125% 0;
+    background-size: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-position: 130% 0;
+    background-size: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-position: 108% -20px;
+    background-size: 500px;
+  }
 }
 
 html * {
